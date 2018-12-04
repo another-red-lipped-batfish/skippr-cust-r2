@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/client/index.js',
+  entry: './client/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'webpack-bundle.js',

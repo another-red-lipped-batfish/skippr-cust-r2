@@ -1,21 +1,20 @@
 import * as types from '../constants/actionTypes';
 
 const initialState = {
-  list: null,
-  search: '',
+  menu: [],
 };
 
-const restaurantsReducer = (state=initialState, action) => {
-  let list;
+const menusReducer = (state=initialState, action) => {
+  let menu;
   switch(action.type) {
 
-    case types.GET_RESTAURANTS:
+    case types.GET_MENU:
       // console.log('payload is ', action.payload[0]);
-      list = action.payload[0];
+      menu = action.payload;
       // console.log('list is ', list)
       return {
         ...state,
-        list,
+        menu,
       };
       
     default:
@@ -23,4 +22,4 @@ const restaurantsReducer = (state=initialState, action) => {
   }
 };
 
-export default restaurantsReducer;
+export default menusReducer;
