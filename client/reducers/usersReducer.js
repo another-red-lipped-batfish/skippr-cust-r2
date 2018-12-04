@@ -11,7 +11,7 @@ const initialState = {
   logged: false
 };
 
-const userReducer = (state=initialState, action) => {
+const usersReducer = (state=initialState, action) => {
 
   let id;
   let firstName;
@@ -105,4 +105,4 @@ const userReducer = (state=initialState, action) => {
   }
 };
 
-export default userReducer;
+export default usersReducer;
